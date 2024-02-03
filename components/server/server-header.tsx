@@ -83,7 +83,7 @@ export const ServerHeader = ({
             onClick={() => onOpen("createChannel")}
             className="px-3 py-2 text-sm cursor-pointer"
           >
-            Create Channel
+            Create Cord
             <PlusCircle className="h-4 w-4 ml-auto" />
           </DropdownMenuItem>
         )}
