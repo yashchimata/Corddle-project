@@ -171,7 +171,7 @@ export const ChatItem = ({
                 rel="noopener noreferrer"
                 className="ml-2 text-sm text-emerald-500 dark:text-emerald-400 hover:underline"
               >
-                PDF File
+                Document
               </a>
             </div>
           )}
