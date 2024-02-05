@@ -39,9 +39,9 @@ const formSchema = z.object({
   name: z.string().min(1, {
     message: "Cord name is required."
   }).refine(
-    name => name !== "default cord",
+    name => name !== "corddle",
     {
-      message: "Channel name cannot be 'default cord'"
+      message: "Channel name cannot be 'corddle'"
     }
   ),
   type: z.nativeEnum(ChannelType)
