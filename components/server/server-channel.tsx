@@ -6,7 +6,7 @@ import {
   MemberRole,
   Server
 } from "@prisma/client";
-import { Edit, Lock, MessageCircleMore, Mic, Trash, Video } from "lucide-react";
+import { Edit, MessageCircleMore, Lock, Mic, Trash, Video } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
@@ -60,7 +60,7 @@ export const ServerChannel = ({
       )}>
         {channel.name}
       </p>
-      {channel.name !== "default cord" && role !== MemberRole.GUEST && (
+      {channel.name !== "default" && role !== MemberRole.GUEST && (
         <div className="ml-auto flex items-center gap-x-2">
           <ActionTooltip label="Edit">
             <Edit
@@ -76,7 +76,7 @@ export const ServerChannel = ({
           </ActionTooltip>
         </div>
       )}
-      {channel.name === "default cord" && (
+      {channel.name === "default" && (
         <Lock
           className="ml-auto w-4 h-4 text-zinc-500 dark:text-zinc-400"
         />
